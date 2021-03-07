@@ -1,0 +1,41 @@
+<!-- 组合器demo -->
+<style>
+    /*
+    后代选择器 
+    允许选择嵌套在另一个元素中的某个元素 p
+    */
+    section p {
+        color: blue;
+    }
+    /*
+    子选择器 
+    允许选择一个元素p，p是section的直接子元素
+    */
+    section > p {
+        background-color: yellow;
+    }
+    /*
+    相邻兄弟选择器 
+    允许选择一个元素p，p是h2的直接兄弟元素
+    */
+    h2 + p {
+        text-transform: uppercase;
+    }
+    /*
+    通用兄弟选择器 
+    允许选择一个元素p，在层次结构中相同级别，不一定在他旁边
+    */
+    h2 ~ p {
+        border: 1px dashed black;
+    }
+</style>
+<section>
+    <h2>Heading 1</h2>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <div>
+      <h2>Heading 2</h2>
+      <p>Paragraph 3</p>
+      <p>Paragraph 4</p>
+    </div>
+</section>

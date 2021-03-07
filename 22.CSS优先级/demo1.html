@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>权重高的样式生效</title>
+		<style>
+			/* 权重值：1 */
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+ 
+			/* 权重值：10 */
+			.box2{
+				width: 100px;
+				height: 100px;
+				background-color: yellow;
+			}
+ 
+			/* 权重值：100 */
+			#box{
+				width: 100px;
+				height: 100px;
+				background-color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div id='box' class='box2'></div>
+	</body>
+</html>
