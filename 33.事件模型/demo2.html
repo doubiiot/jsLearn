@@ -1,0 +1,32 @@
+<html>
+    <style>
+        p {
+            background:red;
+            width:100;
+        }
+    </style>
+    <body>
+        <div>
+            <p>点击</p>
+        </div>
+        <script>
+            // 方法返回文档中与指定选择器或选择器组匹配的第一个 HTMLElement对象
+            var div = document.querySelector('div');
+            var p = document.querySelector('p');
+
+            function callback(event) {
+                var tag = event.currentTarget.tagName;
+                console.log('Tag: ' + tag); // 没有任何输出
+            }
+
+            div.addEventListener('click', callback, false);
+            // 默认不冒泡不能被取消
+            var click = new Event('click',{
+                'bubbles': true,
+                'cancelable': false
+            });
+            // 在当前节点上触发指定事件，从而触发监听函数的执行
+            p.dispatchEvent(click);
+        </script>
+    </body>
+</html>
