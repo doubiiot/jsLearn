@@ -1,0 +1,76 @@
+
+<html>
+    <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            #header {
+                background-color: rgb(173, 173, 245);
+                height: 50px;
+                text-align: center;
+            }
+            #footer {
+                background-color: rgb(173, 173, 245);
+                height: 50px;
+                text-align: center;
+            }
+            #container {
+                padding: 0 220px 0 200px;
+                overflow: hidden;
+            }
+            #left,
+            #right,
+            #middle {
+                float: left;
+                position: relative;
+                word-break: break-all;
+                min-height: 130px;
+            }
+            #left {
+                margin-left: -100%;
+                left: -200px;
+                width: 200px;
+                margin-top: 10px;
+                min-height: 120px;
+                background-color: bisque; 
+                
+            }
+            #right {
+                margin-left: -220px;
+ 
+                right: -220px;
+                width: 220px;
+                background-color: rgb(9, 175, 204);
+                
+            }
+            #middle {
+                background-color: tomato;
+                width: 100%;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id = "header">header</div>
+        <div id = "container">
+            <div id = "middle">
+                <p>middle</p>
+            </div>
+            <div id = "left">
+                <p>
+                    left
+                </p>
+            </div>
+            
+            <div div id = "right">
+                <p>
+                    right
+                </p>
+            </div>
+        </div>
+        
+        <div id = "footer">footer</div>
+    </body>
+</html>
